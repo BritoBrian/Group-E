@@ -94,3 +94,8 @@ color:var(--light);
 {
     margin: 2em 0;
 }
+table
+{
+border-spacing: 0;
+width: 100%;
+}
