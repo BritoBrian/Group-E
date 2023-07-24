@@ -130,4 +130,14 @@ width: 100%;
     {
         display:block;
     }
+    thead tr
+    {
+        position: absolute;
+        top:-9999px;
+        left:-9999px;
+    }
+    tr
+    {
+      border: 1px solid var(--border);
+    }
 }
