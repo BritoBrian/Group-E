@@ -227,3 +227,8 @@ padding: .9em 1em;
 background-color: #16db93;
 border: none;
 }
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover
+{
+background-color: var(--light);
+}
