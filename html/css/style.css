@@ -75,3 +75,13 @@ color:var(--light);
     background-clip: text;
     --webkit-text-fill-color:transparent;
 }
+#header nav
+{
+    background-color:aquamarine;
+    padding: 1em 0;
+    width: 100%;
+}
+#site-main
+{
+    margin-top: 6em;
+}
