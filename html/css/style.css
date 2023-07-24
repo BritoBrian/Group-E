@@ -125,3 +125,9 @@ width: 100%;
     background-color: var(--dark);
     border-color: #32383e;
 }
+@media only screen and (max-width:1024px) {
+    table,thead,tbody,th,tr,td
+    {
+        display:block;
+    }
+}
