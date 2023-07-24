@@ -119,3 +119,9 @@ width: 100%;
 .table tr:hover td>a{
     box-shadow: none;
 }
+.table .thead-dark th
+{
+    color: #fff;
+    background-color: var(--dark);
+    border-color: #32383e;
+}
