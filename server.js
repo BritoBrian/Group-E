@@ -21,3 +21,5 @@ module.exports.dotenv_path=dotenv.config({path:'config.env'});
 
 app.set('view engine','ejs');
 const port=process.env.PORT || 80;
+
+app.listen(port,()=>{console.log(`Server is running on port:${port}`)});
