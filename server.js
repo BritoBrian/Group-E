@@ -15,3 +15,5 @@ app.use(morgan('tiny'));
 app.use('/css',express.static(path.resolve(__dirname,'html/css')));
 app.use('/img',express.static(path.resolve(__dirname,'html/img')));
 app.use('/js',express.static(path.resolve(__dirname,'html/js')));
+
+module.exports.dotenv_path=dotenv.config({path:'config.env'});
