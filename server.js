@@ -17,3 +17,7 @@ app.use('/img',express.static(path.resolve(__dirname,'html/img')));
 app.use('/js',express.static(path.resolve(__dirname,'html/js')));
 
 module.exports.dotenv_path=dotenv.config({path:'config.env'});
+
+
+app.set('view engine','ejs');
+const port=process.env.PORT || 80;
