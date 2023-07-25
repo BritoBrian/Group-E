@@ -7,3 +7,11 @@ const path=require('path');
 
 const host='0.0.0.0';
 app.use(bodyparser.urlencoded({extended:true}));
+
+
+app.use(morgan('tiny'));
+
+//Make static directory to use html, js and css files
+app.use('/css',express.static(path.resolve(__dirname,'html/css')));
+app.use('/img',express.static(path.resolve(__dirname,'html/img')));
+app.use('/js',express.static(path.resolve(__dirname,'html/js')));
