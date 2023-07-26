@@ -5,6 +5,8 @@ const bodyparser=require('body-parser');
 const morgan=require('morgan');
 const path=require('path');
 
+const connectDb=require('./server/databases/connection');
+
 const host='0.0.0.0';
 app.use(bodyparser.urlencoded({extended:true}));
 
