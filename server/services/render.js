@@ -21,3 +21,17 @@ const update_user=(req,res)=>{
     .then((data)=>{
      res.render('update_user',{user:data.data})}).catch(e=>res.send(e));
 }
+const search=(req,res)=>{
+    const name=req.params.id;
+    console.log(name);
+    userDb.find({name:name}).then(data=>{
+        if(!data)
+        {
+            res.status(404).send('data cant be fetch');
+        }
+        else
+        {
+            res.render('index',{users:data});
+        }
+    });
+}
