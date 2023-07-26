@@ -16,3 +16,10 @@ route.get('/search',services.homeroutes);
 route.get('/:id',services.search);
 // API post to create users
 route.post('/api/users',controller.create);
+
+// API post to find the users
+route.get('/api/users',controller.find);
+// API post to update the specified users
+route.put('/api/users/:id',controller.update);
+// API post to delete the specified users
+route.delete('/api/users/:id',controller.delet);
