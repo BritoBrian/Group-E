@@ -1,17 +1,22 @@
 const searchBtn=document.querySelector('.searchBtn');
 const searchValue=document.querySelector('.search');
 
+const homeIcon=document.querySelector('.home');
 
+homeIcon.addEventListener('click',()=>window.location.href="/");
 var value=null;
 searchValue.addEventListener('input',(data)=>{value=null; value=data.target.value;});
 
 
 searchBtn.addEventListener('click',()=>{
     window.reload;
-    window.location.href=`/api/users/search/${value}`;
+    window.location.href=`/${value}`;
 });
 
+
+
 $('#add_user').submit((e)=>{alert('data submitted');});
+
 $("#update_user").submit(function(event){
     event.preventDefault();
 
@@ -33,6 +38,8 @@ $("#update_user").submit(function(event){
         alert("Data Updated Successfully!");
     })
 })
+
+
 if(window.location.pathname == "/"){
     $ondelete = $(".table tbody td a.delete");
     $ondelete.click(function(){
@@ -52,4 +59,5 @@ if(window.location.pathname == "/"){
 
     })
 }
+
 
