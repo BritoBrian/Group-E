@@ -11,6 +11,20 @@
     padding:0;
     box-sizing: border-box;
 }
+.sub-container{
+    display: flex;
+    justify-content:center;
+}
+.title
+{
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+.home
+{
+    margin-right: 100px;
+}
 .main-container{
     display: flex;
     justify-content: space-between;
@@ -79,7 +93,7 @@ color:var(--light);
 
 #header nav
 {
-    background-color:aquamarine;
+    background-color:  #85c1e9 ;
     padding: 1em 0;
     width: 100%;
 }
@@ -116,7 +130,7 @@ width: 100%;
 }
 .table tr:hover
 {
-    background-color: teal;
+    background-color:  #85c1e9 ;
 }
 .table tr:hover td>a{
     box-shadow: none;
