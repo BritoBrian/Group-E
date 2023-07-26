@@ -16,7 +16,8 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `http://0.0.0.0/api/users/${data.id}`,
+        "url" : `https://user-management-system-igml.onrender.com
+/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -33,7 +34,8 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://0.0.0.0/api/users/${id}`,
+            "url" : `https://user-management-system-igml.onrender.com
+/api/users/${id}`,
             "method" : "DELETE"
         }
 
