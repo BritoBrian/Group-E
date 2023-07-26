@@ -10,7 +10,7 @@ const homeroutes=(req,res)=>{
 }
 // create a service to render new_User page
 const add_user=(req,res)=>{
-    res.render('new_User');
+    res.render('new_user');
 }
 // create a service to render update_User page
 const update_user=(req,res)=>{
