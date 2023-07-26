@@ -12,3 +12,6 @@ const scheme=new mongoose.Schema({
     gender:String,
     status:String,
     });
+
+const userDb=mongoose.model('ManagementSystem',scheme);
+module.exports=userDb;
