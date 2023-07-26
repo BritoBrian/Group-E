@@ -8,6 +8,13 @@ const create=async (req,res)=>{
     res.status(400).send('Content cannot be empty');
     return;
    }
+   userDb.find({email:req.body.email}).then(data=>{
+    if(data)
+    {
+        res.send('Email ID already present!');
+        return;
+    }
+   });
    const {name,email,gender,status}=req.body;
    const user=userDb.create({
     name,
