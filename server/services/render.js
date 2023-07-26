@@ -1,6 +1,5 @@
 const axios=require('axios');
 const userDb=require('../model/model.js');
-
 // create a service to render homepage
 const homeroutes=(req,res)=>{
     const db=userDb.find({}).then(data=>
@@ -13,7 +12,6 @@ const homeroutes=(req,res)=>{
 const add_user=(req,res)=>{
     res.render('new_User');
 }
-
 // create a service to render update_User page
 const update_user=(req,res)=>{
     // res.render('update_user');
