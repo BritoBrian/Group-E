@@ -35,3 +35,5 @@ const search=(req,res)=>{
         }
     });
 }
+//Export the module variables
+module.exports= {homeroutes, add_user, update_user,search};
