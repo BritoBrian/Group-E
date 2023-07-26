@@ -1,17 +1,4 @@
-const searchBtn=document.querySelector('.searchBtn');
-const searchValue=document.querySelector('.search');
 
-const homeIcon=document.querySelector('.home');
-
-homeIcon.addEventListener('click',()=>window.location.href="/");
-var value=null;
-searchValue.addEventListener('input',(data)=>{value=null; value=data.target.value;});
-
-
-searchBtn.addEventListener('click',()=>{
-    window.reload;
-    window.location.href=`/${value}`;
-});
 
 
 
@@ -27,9 +14,9 @@ $("#update_user").submit(function(event){
         data[n['name']] = n['value']
     })
 
-   console.log(data);
+
     var request = {
-        "url" : `http://localhost:8000/api/users/${data.id}`,
+        "url" : `http://0.0.0.0/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -46,7 +33,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:8000/api/users/${id}`,
+            "url" : `http://0.0.0.0/api/users/${id}`,
             "method" : "DELETE"
         }
 
@@ -61,3 +48,17 @@ if(window.location.pathname == "/"){
 }
 
 
+const searchBtn=document.querySelector('.searchBtn');
+const searchValue=document.querySelector('.search');
+
+const homeIcon=document.querySelector('.home');
+
+homeIcon.addEventListener('click',()=>window.location.href="/");
+var value=null;
+searchValue.addEventListener('input',(data)=>{value=null; value=data.target.value;});
+
+
+searchBtn.addEventListener('click',()=>{
+    window.reload;
+    window.location.href=`/${value}`;
+});
