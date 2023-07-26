@@ -71,3 +71,5 @@ const delet=(req,res)=>{
         res.send('Id has been deleted');
     }}).catch(e=>res.send(e));
 }
+
+module.exports={create,find,update,delet};
